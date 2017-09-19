@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+		<script type='text/javascript' src='http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js'></script>
+		<!--<script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>-->
+		<script src="js/jquery-qrcode.js"></script>
+	</head>
+
+	<body>
+		<div id="qrcode"></div>
+		<script>
+			(function() {
+				var a = 'https://www.baidu.com';
+				jQuery('#qrcode').qrcode({
+					render: 'canvas',
+					width: 100,
+					height: 100,
+					correctLevel: 0,
+					text: a
+				});
+			})()
+		</script>
+	</body>
+
+</html>
